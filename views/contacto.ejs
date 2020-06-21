@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+    <link type="text/css" rel="stylesheet" href="css/normalize.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
+
+<body>
+    <%- include('sections/header')-%>
+        <div class="hero">
+            <div class="contenedor-hero">
+                <h1 class="text-som t-c"><span>Colegio Arvice</span> </h1>
+                <p><i class="fas fa-map-marker-alt"></i> Zumpango, Estado de México</p>
+                <a href="#contacto" class="boton">Contactar</a>
+            </div>
+        </div>
+        <div class="contenedor2">
+            <section id="contacto" class="contacto">
+                <h2 class="text-som"><span>Contacto</span></h2>
+                <form action="/email" method="post" name="enviarform">
+                    <legend class="text-l">¡Contáctanos!</legend>
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label>Nombre</label>
+                            <input type="text" name="nombre" class="form-ctl" placeholder="*Nombre" required>
+                        </div>
+                        <div class="campo">
+                            <label>Teléfono</label>
+                            <input type="tel" name="telefono" class="form-ctl" placeholder="*Teléfono" required>
+                        </div>
+                        <div class="campo w-100">
+                            <label>Correo</label>
+                            <input id="email" type="email" name="email" class="form-ctl" placeholder="*Correo" required>
+                        </div>
+                        <div class="campo w-100">
+                            <label>Mensaje</label>
+                            <textarea id="message" name="mensaje" class="form-ctl" placeholder="Mensaje:"></textarea>
+                        </div>
+                    </div>
+                    <div class="enviar">
+                        <input type="submit" class="boton" value="Enviar">
+                    </div>
+                </form>
+            </section>
+        </div>
+        <%- include('sections/footer')-%>
+            <script src="https://kit.fontawesome.com/67a2f2d01b.js " crossorigin="anonymous "></script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arvice</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+    <link type="text/css" rel="stylesheet" href="css/normalize.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+</head>
+
+<body>
+
+    <%- include('sections/header')-%>
+        <section class="carrusel-principal contenedor-carrusel">
+            <div class="slider-carrusel">
+                <div class="main-container-card ">
+                    <img src="img/biblio.jpeg" />
+                </div>
+                <div class="main-container-card ">
+                    <img src="img/carr2.jpg" />
+                </div>
+                <div class="main-container-card ">
+                    <img src="img/carr3.jpg" />
+                </div>
+                <div class="main-container-card ">
+                    <img src="img/computo.jpeg" />
+                </div>
+                <div class="main-container-card ">
+                    <img src="img/uniforme.jpeg" />
+                </div>
+                <div class="main-container-card ">
+                    <img src="img/instalaciones.jpeg" />
+                </div>
+            </div>
+        </section>
+        <div class="cnt-serv">
+            <div class="gris">
+                <div class="con h1">
+                    <h2 class="ubicacion" style="padding-top: 2rem;">Servicios</h2>
+                </div>
+                <div class="contenedor ">
+                    <div class="grid-3col">
+                        <div class="serv">
+                            <p><i class="fas f fa-check-double"></i>Cafetería</p>
+                            <p><i class="fas f fa-check-double"></i>Laboratorio de cómputo</p>
+                            <p><i class="fas f fa-check-double"></i>Actividades culturales</p>
+                        </div>
+                        <div class="serv">
+                            <p><i class="fas f fa-check-double"></i>Enfermería</p>
+                            <p><i class="fas f fa-check-double"></i>Infraestructura de calidad</p>
+                            <p><i class="fas f fa-check-double"></i>Doscentes altamente capacitados</p>
+                        </div>
+                        <div class="serv">
+                            <p><i class="fas f fa-check-double"></i>Laboratorio de Física y química</p>
+                            <p><i class="fas f fa-check-double"></i>Plan de becas por promedio</p>
+                            <p><i class="fas f fa-check-double"></i>Talleres extracurriculares</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" con">
+            <h2 class="ubicacion">Ubicación</h2>
+        </div>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d938.5042084703011!2d-99.09458707081332!3d19.796883599167412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d18c0e607f2d37%3A0xf045a95568283487!2sAv%20Hidalgo%2080%2C%20San%20Miguel%2C%2055603%20Zumpango%20de%20Ocampo%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1591461511612!5m2!1ses-419!2smx"
+                width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <%- include('sections/footer')-%>
+            <script src="https://kit.fontawesome.com/67a2f2d01b.js " crossorigin="anonymous "></script>
+            <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+            <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+            <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+            <script src="js/carrusel.js"></script>
+</body>
+
+</html>
