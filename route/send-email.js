@@ -18,21 +18,21 @@ router.post('/email', async(req, res) => {
     `;
 
     const transporte = nodemailer.createTransport({
-        host: 'smtp.ethereal.email',
+        host: 'smtp.gmail.com',
         port: 587,
         secure: false,
         auth: {
-            user: 'maureen9@ethereal.email',
-            pass: '4gETbGBcEWqVHfFwFZ'
+            user: 'pedro.caballero.ram@gmail.com',
+            pass: '2015600258'
         },
         tls: {
-            rejectUnauthorized: false
+            rejectUnauthorized: true
         }
     });
 
     const info = await transporte.sendMail({
-        from: "'Servidor SMTP creado' <maureen9@ethereal.email>",
-        to: 'picka-123@hotmail.com',
+        from: "'Frmulario de ARVICE' <maureen9@ethereal.email>",
+        to: 'colegioarvice@hotmail.com',
         subject: 'Formulario de contacto',
         html: contentHTML
     });
