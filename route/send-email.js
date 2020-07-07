@@ -10,11 +10,10 @@ router.post('/email', async(req, res) => {
         <h1>Información</h1>
         <ul>
             <li>Nombre: ${nombre} </li>
-            <li>Email: ${telefono} </li>
-            <li>Telefono: ${email} </li>
+            <li>Email: ${email} </li>
+            <li>Telefono: ${telefono} </li>
         </ul>
         <p>${mensaje}</p>
-    
     `;
 
     const transporte = nodemailer.createTransport({
@@ -22,8 +21,8 @@ router.post('/email', async(req, res) => {
         port: 587,
         secure: false,
         auth: {
-            user: 'pedro.caballero.ram@gmail.com',
-            pass: '2015600258'
+            user: 'cole.arvice@gmail.com',
+            pass: 'arvice2020'
         },
         tls: {
             rejectUnauthorized: true
@@ -31,13 +30,14 @@ router.post('/email', async(req, res) => {
     });
 
     const info = await transporte.sendMail({
-        from: "'Frmulario de ARVICE' <maureen9@ethereal.email>",
+        from: "'Frmulario de ARVICE' <cole.arvice@gmail.com>",
         to: 'colegioarvice@hotmail.com',
         subject: 'Formulario de contacto',
         html: contentHTML
     });
 
     console.log('Mensaje enviado', info.messageId);
+    // res.send("<script>alert('La venta se realizo correctam')</script>")
     res.redirect('/contacto');
 });
 

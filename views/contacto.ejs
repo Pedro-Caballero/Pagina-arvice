@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Arvice</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
     <link type="text/css" rel="stylesheet" href="css/normalize.css">
     <link type="text/css" rel="stylesheet" href="css/style.css">
@@ -23,7 +23,7 @@
         <div class="contenedor2">
             <section id="contacto" class="contacto">
                 <h2 class="text-som"><span>Contacto</span></h2>
-                <form action="/email" method="post" name="enviarform">
+                <form action="/email" method="post" name="enviarform" onsubmit="return enviar();" id="myform">
                     <legend class="text-l">¡Contáctanos!</legend>
                     <div class="contenedor-campos">
                         <div class="campo">
@@ -44,7 +44,7 @@
                         </div>
                     </div>
                     <div class="enviar">
-                        <input type="submit" class="boton" value="Enviar">
+                        <input type="submit" class="boton" #formulario_contacto value="Enviar">
                     </div>
                 </form>
             </section>
