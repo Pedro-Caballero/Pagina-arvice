@@ -31,7 +31,7 @@ router.post('/email', async(req, res) => {
 
     const info = await transporte.sendMail({
         from: "'Frmulario de ARVICE' <cole.arvice@gmail.com>",
-        to: 'colegioarvice@hotmail.com',
+        to: 'colegioarvice.cea@gmail.com',
         subject: 'Formulario de contacto',
         html: contentHTML
     });
