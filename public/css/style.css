@@ -588,6 +588,9 @@ div.mapa {
         display: flex;
         flex-direction: row;
     }
+    .logo-foo img {
+        width: 20%!important;
+    }
 }
 
 .fo-der {
@@ -596,7 +599,7 @@ div.mapa {
 }
 
 .logo-foo img {
-    width: 20%;
+    width: 20%!important;
 }
 
 .lf {
