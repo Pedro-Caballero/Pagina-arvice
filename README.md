@@ -2,4 +2,5 @@
 Se desarrollo la página web para el Colegio ARVICE, es totalmente responsivo
 
 # Desarrollo
-Se desarrollo el siguiente proyecto con NodeJs y express, implementando el MVC
+Se desarrollo el siguiente proyecto con NodeJs y express, implementando el MVC.
+utilizando CSS3 puro, sin ningun framework.
